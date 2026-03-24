@@ -1,6 +1,9 @@
-QT       += core gui
+QT       += core gui widgets sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = untitled4
+TEMPLATE = app
 
 CONFIG += c++17
 

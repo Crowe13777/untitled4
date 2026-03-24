@@ -8,6 +8,8 @@
 #include <QMap>
 #include <QMessageBox>
 #include <QSqlQuery>
+#include <QDirIterator>
+#include <QSqlError>
 
 MainWindow::MainWindow(QSqlDatabase &db, QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), db(db) {

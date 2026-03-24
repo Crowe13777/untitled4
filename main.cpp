@@ -1,6 +1,7 @@
 #include <QApplication>
 #include "mainwindow.h"
 #include <QSqlDatabase>
+#include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
 
@@ -32,6 +33,8 @@ bool setupDatabase(QSqlDatabase &db) {
 }
 
 int main(int argc, char *argv[]) {
+    qDebug() << "Доступные драйверы:" << QSqlDatabase::drivers(); // Проверка драйверов
+
     QApplication a(argc, argv);
 
     // Настройте соединение с базой PostgreSQL

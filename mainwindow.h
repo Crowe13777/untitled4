@@ -15,7 +15,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_indexButton_clicked();
     void on_searchButton_clicked();
 
 private:
